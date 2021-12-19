@@ -29,7 +29,7 @@ with urllib.request.urlopen('http://mcc-mnc.com/') as f:
             current_item['iso'] = td_search[3]
             current_item['country'] = td_search[4]
             current_item['country_code'] = td_search[5]
-            current_item['network'] = td_search[6][0:-1]
+            current_item['network'] = td_search[6][:-1]
 
             mcc_mnc_list.append(current_item)
 
